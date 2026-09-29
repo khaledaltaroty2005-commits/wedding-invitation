@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة زفاف</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="overlay" onclick="openInvitation()">
+        <div class="overlay-card">
+            <div class="monogram">M & R</div>
+            <div class="tap-text">إضغط لفتح الدعوة</div>
+            <div class="tap-subtext">Tap to open</div>
+        </div>
+    </div>
+
+    <audio id="bg-music" src="music.mp3" loop></audio>
+
+    <main class="container">
+        <section class="section header-section">
+            <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
+            <p class="welcome-txt">نتشارك معكم فرحتنا في يوم زفافنا</p>
+            <p class="welcome-txt-en">We share with you the joy of our wedding day</p>
+            <h1 class="names">محمد & روان</h1>
+            <h2 class="names-en">Mohamed & Rawan</h2>
+        </section>
+
+        <section class="section card-section">
+            <h3>دعوة زفاف / Wedding Invitation</h3>
+            <p class="invitation-text">
+                تكتمل فرحتنا بوجودكم معنا،<br>
+                حضوركم يشرفنا ويزيدنا بهجة وسروراً في ليلة العمر.
+            </p>
+            <p class="invitation-text-en">
+                Our joy is complete with your presence.<br>
+                Your attendance honors us and adds joy to our special night.
+            </p>
+        </section>
+
+        <section class="section countdown-section">
+            <h3>العد التنازلي ليومنا المنتظر</h3>
+            <p class="en-sub">Countdown to our awaited day</p>
+            
+            <div id="timer">
+                <div class="time-box"><span id="days">00</span><div>يوم</div></div>
+                <div class="time-box"><span id="hours">00</span><div>ساعة</div></div>
+                <div class="time-box"><span id="minutes">00</span><div>دقيقة</div></div>
+                <div class="time-box"><span id="seconds">00</span><div>ثانية</div></div>
+            </div>
+        </section>
+
+        <section class="section info-section">
+            <div class="info-card">
+                <h3>ميعاد الحفل / Wedding Time</h3>
+                <p class="highlight">الجمعة، ٢ أكتوبر ٢٠٢٦</p>
+                <p>Friday, October 2, 2026</p>
+                <hr>
+                <p class="highlight">الساعة ٣:٠٠ عصراً</p>
+                <p>3:00 PM</p>
+            </div>
+
+            <div class="info-card">
+                <h3>مكان الحفل / Venue</h3>
+                <p class="highlight">قاعة ارابيلا</p>
+                <p>Arabella Hall</p>
+                <p>منيا القمح - مصر</p>
+                <br>
+                <a href="https://maps.app.goo.gl/oW56gTy6LCEqKtwW8" target="_blank" class="map-btn">
+                    📍 اضغط للوصول للمكان (Google Maps)
+                </a>
+            </div>
+        </section>
+
+        <section class="section footer-section">
+            <p class="closing">
+                نسأل الله أن يبارك في هذا الزواج، وأن يرزقنا السعادة والمودة والرحمة.
+            </p>
+            <p class="thanks">شكراً لحضوركم ❤️</p>
+            <div class="final-names">محمد & روان</div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
