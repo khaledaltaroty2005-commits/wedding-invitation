@@ -3,86 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دعوة زفاف - أحمد ومنار</title>
+    <title>دعوة زفاف | أحمد & منار</title>
+
+    <!-- الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- ملف التنسيقات -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div id="overlay" onclick="openInvitation()">
+    <!-- الشاشة الافتتاحية -->
+    <div id="overlay">
         <div class="overlay-card">
             <div class="monogram">A & M</div>
-            <div class="tap-text">إضغط لفتح الدعوة</div>
-            <div class="tap-subtext">Tap to open</div>
+            <div class="tap-text">أحمد & منار</div>
+            <div class="tap-subtext">اضغط لدخول الدعوة ✨</div>
         </div>
     </div>
 
-    <audio id="bg-music" src="music.mp3" loop></audio>
+    <!-- محتوى الدعوة -->
+    <div class="container">
+        
+        <!-- الترحيب -->
+        <div class="section">
+            <div class="bismillah">بسم الله الرحمن الرحيم</div>
+            <p class="welcome-txt">"وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً"</p>
+        </div>
 
-    <main class="container">
-        <section class="section header-section">
-            <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
-            <p class="welcome-txt">نتشارك معكم فرحتنا في يوم زفافنا</p>
-            <p class="welcome-txt-en">We share with you the joy of our wedding day</p>
+        <!-- أسماء العروسين -->
+        <div class="section">
+            <div class="welcome-txt">يتشرفان بدعوتكم لحضور حفل زفافهما</div>
             <h1 class="names">أحمد & منار</h1>
-            <h2 class="names-en">AHMED & MNAR</h2>
-        </section>
+            <div class="names-en">AHMED & MANAR</div>
+            <p class="invitation-text">يسعدنا ويشرفنا حضوركم لتكتمل فرحتنا في هذه الليلة المميزة.</p>
+            <p class="invitation-text-en">We would be honored by your presence to celebrate our special day with us.</p>
+        </div>
 
-        <section class="section card-section">
-            <h3>دعوة زفاف / Wedding Invitation</h3>
-            <p class="invitation-text">
-                تكتمل فرحتنا بوجودكم معنا،<br>
-                حضوركم يشرفنا ويزيدنا بهجة وسروراً في ليلة العمر.
-            </p>
-            <p class="invitation-text-en">
-                Our joy is complete with your presence.<br>
-                Your attendance honors us and adds joy to our special night.
-            </p>
-        </section>
-
-        <section class="section countdown-section">
-            <h3>العد التنازلي ليومنا المنتظر</h3>
-            <p class="en-sub">Countdown to our awaited day</p>
+        <!-- العداد التنازلي والتاريخ -->
+        <div class="section info-card">
+            <h3>📅 الموعد والتاريخ</h3>
+            <p class="highlight">الأربعاء، 25 نوفمبر 2026</p>
+            <p style="color: var(--accent-gold); font-size: 16px; margin-top: 5px; font-weight: bold;">⏰ الساعة 3:00 عصراً</p>
+            <p style="color: var(--text-secondary); margin-top: 5px; font-size: 13px;">November 25, 2026</p>
             
             <div id="timer">
-                <div class="time-box"><span id="days">00</span><div>يوم</div></div>
-                <div class="time-box"><span id="hours">00</span><div>ساعة</div></div>
-                <div class="time-box"><span id="minutes">00</span><div>دقيقة</div></div>
-                <div class="time-box"><span id="seconds">00</span><div>ثانية</div></div>
+                <div class="time-box"><span id="days">00</span><div>أيام</div></div>
+                <div class="time-box"><span id="hours">00</span><div>ساعات</div></div>
+                <div class="time-box"><span id="minutes">00</span><div>دقائق</div></div>
+                <div class="time-box"><span id="seconds">00</span><div>ثواني</div></div>
             </div>
-        </section>
+        </div>
 
-        <section class="section info-section">
-            <div class="info-card">
-                <h3>ميعاد الحفل / Wedding Time</h3>
-                <p class="highlight">الجمعة، ٢ أكتوبر ٢٠٢٦</p>
-                <p>Friday, October 2, 2026</p>
-                <hr>
-                <p class="highlight">الساعة ٣:٠٠ عصراً</p>
-                <p>3:00 PM</p>
-            </div>
+        <!-- العنوان والموقع -->
+        <div class="section info-card">
+            <h3>📍 تفاصيل القاعة والمكان</h3>
+            <p class="highlight">قاعة عبار للمناسبات</p>
+            <p style="color: var(--text-secondary); margin-bottom: 15px;">منيا القمح - الشرقية</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=قاعة+عبار+منيا+القمح" target="_blank" class="map-btn">🗺️ فتح الموقع على الخريطة</a>
+        </div>
 
-            <div class="info-card">
-                <h3>مكان الحفل / Venue</h3>
-                <p class="highlight">قاعة ارابيلا</p>
-                <p>Arabella Hall</p>
-                <p>منيا القمح - مصر</p>
-                <br>
-                <a href="https://maps.app.goo.gl/oW56gTy6LCEqKtwW8" target="_blank" class="map-btn">
-                    📍 اضغط للوصول للمكان (Google Maps)
-                </a>
-            </div>
-        </section>
+        <!-- الخاتمة -->
+        <div class="section">
+            <p class="closing">حضوركم يسعدنا وعقبال عندكم جميعاً ✨</p>
+            <div class="thanks">داعين الله أن يديم بيننا الود والمحبة</div>
+            <div class="final-names" style="margin-top: 15px;">أحمد & منار</div>
+        </div>
 
-        <section class="section footer-section">
-            <p class="closing">
-                نسأل الله أن يبارك في هذا الزواج، وأن يرزقنا السعادة والمودة والرحمة.
-            </p>
-            <p class="thanks">شكراً لحضوركم ❤️</p>
-            <div class="final-names">أحمد & منار</div>
-        </section>
-    </main>
+    </div>
 
+    <!-- ملف السكربت للعداد والتفاعلات -->
     <script src="script.js"></script>
 </body>
 </html>
